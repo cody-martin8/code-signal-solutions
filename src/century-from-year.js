@@ -11,4 +11,4 @@ function centuryFromYear(year) {
 // Example
 
 centuryFromYear(1901);
-// Expected: 20
+// Expected return: 20
