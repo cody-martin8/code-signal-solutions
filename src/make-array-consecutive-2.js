@@ -1,3 +1,6 @@
+// Create a function that reads an array of numbers and returns the quantity
+// of integers that are not represented in the sequence
+
 function makeArrayConsecutive(statues) {
   let count = 0;
   statues.sort((a, b) => a - b);

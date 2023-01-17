@@ -1,3 +1,5 @@
+// Create a function that can return the number of the century from a given year
+
 function centuryFromYear(year) {
   const century = year / 100;
   const remainder = century % 1;
