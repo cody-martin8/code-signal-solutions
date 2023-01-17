@@ -1,3 +1,6 @@
+// Create a function that checks an array to see if the numbers are increasing
+// or can be made to be increasing by removing just one number.
+
 function almostIncreasingSequence(seq) {
   let count = 0;
   for (let i = 0; i < seq.length; i++) {

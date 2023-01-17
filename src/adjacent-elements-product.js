@@ -1,3 +1,6 @@
+// Create a function that takes an array of numbers and finds the largest
+// product between any two consecutive integers.
+
 function adjacentElementsProduct(inputArray) {
   let product = inputArray[1] * inputArray[0];
   for (let i = 2; i < inputArray.length; i++) {
