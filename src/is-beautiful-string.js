@@ -1,3 +1,6 @@
+// Create a function that evaluates a string to see if it follows the 'beautiful'
+// criteria
+
 function isBeautifulString(inputString) {
   const beaut = inputString.split('').sort();
   for (let i = 0; i < beaut.length; i++) {
