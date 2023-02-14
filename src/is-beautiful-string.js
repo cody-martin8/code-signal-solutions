@@ -7,14 +7,14 @@ function isBeautifulString(inputString) {
       i--;
     }
   }
-  for (let i = 1; i < beaut.length; i++) {
-    if (!beaut[0].includes('a')) {
+  if (!beaut[0].includes('a')) {
+    return false;
+  }
+  for (let i = 0; i < beaut.length - 1; i++) {
+    if (beaut[i].charCodeAt(0) !== (beaut[i + 1].charCodeAt(0) - 1)) {
       return false;
     }
-    if (beaut[i - 1].charCodeAt(0) !== (beaut[i].charCodeAt(0) - 1)) {
-      return false;
-    }
-    if (beaut[i - 1].length < beaut[i].length) {
+    if (beaut[i].length < beaut[i + 1].length) {
       return false;
     }
   }
