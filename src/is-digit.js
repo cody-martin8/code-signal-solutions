@@ -1,12 +1,10 @@
-// Create a function that searches a string for the first digit
+// Create a function that evaluates wheteher a given symbol is a digit
 
-function isDigit(inputString) {
-  const isTrue = element => element === true;
-  const truth = inputString.split('').map(x => !isNaN(parseInt(x)));
-  return inputString[truth.findIndex(isTrue)];
+function isDigit(symbol) {
+  return !isNaN(parseInt(symbol));
 }
 
 // Example
 
-isDigit('abcde1ghijk');
-// Expected return: '1'
+isDigit('3');
+// Expected return: true
